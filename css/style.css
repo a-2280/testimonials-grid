@@ -33,13 +33,13 @@ body {
   align-items: center;
 }
 
-.contact img {
+.contact .avatar {
   border-radius: 50%;
   width: 2rem;
 }
 
-.daniel .contact img,
-.patrick .contact img {
+.daniel .contact .avatar,
+.patrick .contact .avatar {
   border: 2px solid var(--purple);
 }
 
@@ -99,6 +99,10 @@ section {
   margin-top: 2rem;
 }
 
+.quotation {
+  display: none;
+}
+
 @media (min-width: 1300px) {
   body {
     height: 100vh;
@@ -125,5 +129,11 @@ section {
   .container-two {
     flex-direction: row;
     width: 60rem;
+  }
+
+  .quotation {
+    display: block;
+    padding-left: 30rem;
+    position: fixed;
   }
 }
